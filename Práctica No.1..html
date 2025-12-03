@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Autolavado COVID 19</title>
+  <meta name="description" content="Autolavado COVID 19: paquetes, promociones, ubicación y contacto"/>
+  <style>
+    :root{--accent:#dc2626;--secondary:#1d4ed8;--dark:#0f1724;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;line-height:1.45;margin:0;color:var(--dark)}
+    header{background:linear-gradient(90deg,rgba(220,38,38,0.08),rgba(29,78,216,0.06));border-bottom:1px solid #eee;animation:fadeIn 1s ease-in-out}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    nav{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{height:48px;transition:transform 0.3s}
+    .brand img:hover{transform:scale(1.1)}
+    .nav-links{display:flex;gap:18px}
+    .nav-links a{color:var(--dark);text-decoration:none;font-weight:600;transition:color 0.3s}
+    .nav-links a:hover{color:var(--accent)}
+    .hero{display:flex;gap:28px;align-items:center;padding:36px 0;animation:slideUp 1s ease-out}
+    .hero-left{flex:1}
+    .hero h1{font-size:clamp(26px,4vw,40px);margin:0 0 12px;color:var(--accent)}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .cta{display:inline-block;background:var(--secondary);color:white;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700;transition:all 0.3s}
+    .cta:hover{background:#163cbd;transform:scale(1.05)}
+    .hero-right{width:420px}
+    .card{background:white;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,36,0.06);padding:18px;transition:transform 0.3s, box-shadow 0.3s}
+    .card:hover{transform:translateY(-6px);box-shadow:0 12px 24px rgba(15,23,36,0.12)}
+    .packages{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:28px 0;animation:fadeIn 1.2s ease-in-out}
+    .pkg{border-radius:10px;padding:16px;background:linear-gradient(180deg,#fff,#fbfbff);border:1px solid #eef;transition:transform 0.3s, box-shadow 0.3s}
+    .pkg:hover{transform:translateY(-6px);box-shadow:0 10px 20px rgba(29,78,216,0.15)}
+    .pkg h3{margin:0 0 8px;color:var(--secondary)}
+    .prices{font-weight:800;font-size:20px;color:var(--dark)}
+    .section{padding:28px 0;border-top:1px solid #f2f4f7;animation:fadeIn 1.3s ease-in-out}
+    .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+    footer{background:#fafafa;padding:20px;margin-top:28px;border-top:1px solid #eee;animation:fadeIn 1.5s ease-in-out}
+    .locations li{margin:8px 0}
+    button{cursor:pointer;transition:all 0.3s}
+    button:hover{transform:scale(1.05);opacity:0.9}
+    @media(max-width:880px){.hero{flex-direction:column}.hero-right{width:100%}}
+
+    /* Animaciones */
+    @keyframes fadeIn {
+      from {opacity:0;}
+      to {opacity:1;}
+    }
+    @keyframes slideUp {
+      from {transform:translateY(40px);opacity:0;}
+      to {transform:translateY(0);opacity:1;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <!-- Logotipo generado en SVG -->
+          <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='40'><rect rx='8' width='140' height='40' fill='%23dc2626'/><text x='12' y='26' font-family='Segoe UI,Roboto' font-size='16' fill='white'>Autolavado</text><text x='12' y='38' font-family='Segoe UI,Roboto' font-size='12' fill='%231d4ed8'>COVID 19</text></svg>" alt="Logo"/>
+          <div style="font-size:14px;color:var(--muted)">Limpieza Total</div>
+        </div>
+        <div class="nav-links">
+          <a href="#inicio">INICIO</a>
+          <a href="#paquetes">PAQUETES</a>
+          <a href="#club">CLUB</a>
+          <a href="#sucursales">SUCURSAL</a>
+          <a href="#contacto">CONTACTO</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <img src="covid19.png" alt="Logo Autolavado COVID 19" style="height:150px"/>
+    <section id="inicio" class="hero">
+      <div class="hero-left">
+        <h1>Autolavado COVID 19</h1>
+        <p>Tu auto limpio, rápido y seguro. Servicio profesional con protocolos de higiene y sanitización. ¡Confía en nosotros todos los días de la semana!</p>
+        <a href="#paquetes" class="cta">Ver paquetes</a>
+      </div>
+      <div class="hero-right">
+        <div class="card">
+          <h4 style="margin:0 0 6px">Consulta tu membresía</h4>
+          <p style="margin:0 0 12px;color:var(--muted)">Ingresa tu número de tarjeta o correo para ver puntos acumulados y beneficios.</p>
+          <input style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef2;margin-bottom:10px" placeholder="Número de tarjeta o correo" />
+          <div style="display:flex;gap:8px">
+            <button style="flex:1;padding:10px;border-radius:8px;border:0;background:#eef">Consultar</button>
+            <a href="#club" style="padding:10px;border-radius:8px;border:0;background:transparent;color:var(--accent);font-weight:700;text-decoration:none">Unirme al Club</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="paquetes" class="section">
+      <h2>Paquetes de lavado</h2>
+      <div class="packages">
+        <article class="pkg">
+          <h3>Lavado Básico</h3>
+          <div class="prices">$120</div>
+          <ul>
+            <li>Lavado exterior</li>
+            <li>Espuma activa</li>
+            <li>Secado manual</li>
+          </ul>
+          <button style="margin-top:8px;padding:8px 12px;border-radius:8px;border:0;background:var(--secondary);color:white">Reservar</button>
+        </article>
+
+        <article class="pkg">
+          <h3>Lavado Completo</h3>
+          <div class="prices">$200</div>
+          <ul>
+            <li>Incluye lavado básico</li>
+            <li>Aspirado interior</li>
+            <li>Limpieza de vidrios</li>
+          </ul>
+          <button style="margin-top:8px;padding:8px 12px;border-radius:8px;border:0;background:var(--secondary);color:white">Reservar</button>
+        </article>
+
+        <article class="pkg">
+          <h3>Lavado Premium</h3>
+          <div class="prices">$350</div>
+          <ul>
+            <li>Incluye lavado completo</li>
+            <li>Cera protectora</li>
+            <li>Detalle interior</li>
+          </ul>
+          <button style="margin-top:8px;padding:8px 12px;border-radius:8px;border:0;background:var(--secondary);color:white">Reservar</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="club" class="section">
+      <h2>Club Autolavado COVID 19</h2>
+      <p>Únete para acumular lavados, recibir promociones exclusivas y obtener beneficios especiales.</p>
+      <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
+        <div style="flex:1;min-width:220px" class="card">
+          <h4>Beneficios</h4>
+          <ul>
+            <li>Lavados gratis acumulando puntos</li>
+            <li>Promociones especiales</li>
+            <li>Atención preferente</li>
+          </ul>
+          <a href="#" style="display:inline-block;margin-top:8px;text-decoration:none;color:var(--secondary);font-weight:700">Conoce más</a>
+        </div>
+        <div style="flex:1;min-width:220px" class="card">
+          <h4>Paquetes empresariales</h4>
+          <p style="color:var(--muted)">Contrata lavados prepago y obtén descuentos exclusivos para flotillas y empresas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sucursales" class="section">
+      <h2>Nuestra sucursal</h2>
+      <ul class="locations">
+        <li><strong>Dirección:</strong> Carretera Federal Tuxtepec - Palomares km 23</li>
+      </ul>
+      <div style="margin-top:14px" class="card">
+        <h4>Horario de atención</h4>
+        <p style="margin:6px 0">Lunes a Domingo: 7:00 am - 18:00 pm</p>
+        <p style="margin:6px 0">Tel: <strong>2831298023</strong></p>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <form class="card" onsubmit="event.preventDefault();alert('Gracias — formulario enviado');">
+        <label style="display:block;margin-bottom:8px">Nombre<input required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef2;margin-top:6px"/></label>
+        <label style="display:block;margin-bottom:8px">Teléfono<input required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef2;margin-top:6px"/></label>
+        <label style="display:block;margin-bottom:8px">Mensaje<textarea required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef2;margin-top:6px" rows="4"></textarea></label>
+        <button type="submit" style="padding:10px 14px;border-radius:8px;border:0;background:var(--accent);color:white;font-weight:700">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div style="font-size:14px;color:var(--muted)">© 2025 Autolavado COVID 19 — Todos los derechos reservados</div>
+      <div style="font-size:14px;color:var(--muted)">Diseñado por Arturo Martinez Cid</div>
+    </div>
+  </footer>
+</body>
+</html>
